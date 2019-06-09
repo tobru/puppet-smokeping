@@ -11,7 +11,7 @@ class smokeping::params {
     $master_url         = 'http://somewhere/cgi-bin/smokeping.cgi'
     $shared_secret      = '/etc/smokeping/slavesecrets.conf'
     $slave_secrets      = '/etc/smokeping/smokeping_secrets'
-    $slave_name         = 'slave1'
+    $slave_name         = $facts['fqdn']
     $slave_dir          = '/etc/smokeping/config.d/slaves.d'
     $slave_location     = ''
     $slave_display_name = ''

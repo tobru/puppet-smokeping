@@ -112,6 +112,7 @@ class smokeping::config {
       }
 
       smokeping::slave { $::fqdn:
+        slave_name   => $slave_name,
         location     => $smokeping::slave_location,
         display_name => $display_name,
         color        => $slave_color,
